@@ -40,7 +40,7 @@ EFChainElement = React.createClass({
         }.bind(this));
         return (
             <span>
-                <h3><a onClick={this.toggle}>{this.props.ex.className}</a></h3>
+                <h3><a onClick={this.toggle}>{this.props.ex.className} ({this.props.ex.message})</a></h3>
                 {this.state.expand ?
                     (<ul>{rows}</ul>) : (<ul></ul>)
                 }
