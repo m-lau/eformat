@@ -5,7 +5,7 @@ var pkg = require('./package.json');
 
 var exception = null;
 try {
-    opener.angular.element(opener.document.body).scope().message.failInfo.exception;
+    exception=opener.angular.element(opener.document.body).scope().message.failInfo.exception;
 } catch (e) {
 
 }
